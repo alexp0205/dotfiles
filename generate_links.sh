@@ -4,4 +4,5 @@ ln -s ~/configs/dotfiles/zshrc ~/.zshrc
 ln -s ~/configs/dotfiles/zprofile ~/.zprofile
 ln -s ~/configs/dotfiles/xinitrc ~/.xinitrc
 
-ln -s ~/configs/xmonad-config/polybar/config ~/.config/polybar/config
+mkdir -p ~/.config/polybar
+ln -s ~/configs/dotfiles/polybar/config ~/.config/polybar/config
