@@ -51,8 +51,9 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git history mvn zsh-syntax-highlighting)
+plugins=(git history mvn)
 plugins+=(zsh-nvm)
+plugins+=(virtualenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -88,13 +89,6 @@ source $ZSH/oh-my-zsh.sh
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 
-source /home/alex/.zefosh
-
-PATH="/home/alex/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/home/alex/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/home/alex/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/home/alex/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/alex/perl5"; export PERL_MM_OPT;
 
 # Adding Haskell Stack Bin Path
 PATH=$PATH:~/.local/bin
