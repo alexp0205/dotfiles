@@ -6,22 +6,16 @@ xrdb ~/.Xresources
 setxkbmap -option caps:escape
 
 # Compositing
-compton &
+picom &
 
 # set wallpaper
-feh --bg-fill ~/configs/linux-yoda.jpg
-
+nitrogen --restore &
 # Cursor will no longer be an x
 xsetroot -cursor_name left_ptr
 
 firefox &
 telegram-desktop & 
 slack &
-
-pgrep redshift-gtk &> /dev/null || redshift-gtk &> /dev/null &
-
-eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
-export SSH_AUTH_SOCK
 
 exec xmonad
 

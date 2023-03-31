@@ -45,10 +45,9 @@ URxvt*loginShell: true
 Urxvt*secondaryScroll:  true    # Enable Shift-PageUp/Down in screen
 URxvt*saveLines: 5000
 URxvt*termName: rxvt-unicode
-URxvt.perl-ext: default,matcher
+URxvt.perl-ext-common:default,-confirm-paste
 URxvt.url-launcher: /usr/bin/google-chrome-stable
-URxvt.matcher.button: 1
-URxvt*font:  xft:Meslo LG S DZ for Powerline:size=9:antialias=true
+URxvt.font:  xft:Meslo LG S DZ for Powerline:size=9:antialias=true
 
 
 !! Rofi

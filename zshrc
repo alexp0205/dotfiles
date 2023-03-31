@@ -52,8 +52,6 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git history mvn)
-plugins+=(zsh-nvm)
-plugins+=(virtualenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,6 +87,16 @@ source $ZSH/oh-my-zsh.sh
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 
+setxkbmap -option caps:escape
 
-# Adding Haskell Stack Bin Path
-PATH=$PATH:~/.local/bin
+export HISTSIZE=1000000000
+export SAVEHIST=$HISTSIZE
+setopt EXTENDED_HISTORY
+source /usr/share/nvm/init-nvm.sh
+
+
+# Android studio setup - https://reactnative.dev/docs/environment-setup
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+
