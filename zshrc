@@ -94,4 +94,3 @@ export SAVEHIST=$HISTSIZE
 setopt EXTENDED_HISTORY
 source /usr/share/nvm/init-nvm.sh
 
-export PATH=$PATH:~/configs/dotfiles/commands
