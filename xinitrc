@@ -13,6 +13,9 @@ nitrogen --restore &
 # Cursor will no longer be an x
 xsetroot -cursor_name left_ptr
 
+# Start redshift
+redshift &
+
 firefox &
 telegram-desktop & 
 slack &

@@ -94,9 +94,4 @@ export SAVEHIST=$HISTSIZE
 setopt EXTENDED_HISTORY
 source /usr/share/nvm/init-nvm.sh
 
-
-# Android studio setup - https://reactnative.dev/docs/environment-setup
-export ANDROID_SDK_ROOT=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
-export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
-
+export PATH=$PATH:~/configs/dotfiles/commands
