@@ -6,7 +6,7 @@ xrdb ~/.Xresources
 setxkbmap -option caps:escape
 
 # Compositing
-picom &
+# picom & # Commenting because the screenshot was showing lines
 
 # set wallpaper
 nitrogen --restore &
@@ -18,7 +18,6 @@ redshift &
 
 firefox &
 telegram-desktop & 
-slack &
 
 exec xmonad
 
