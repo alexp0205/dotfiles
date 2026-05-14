@@ -97,10 +97,3 @@ source /usr/share/nvm/init-nvm.sh
 # Flutter
 export PATH="$PATH:/home/alex/software/flutter/bin"
 
-#Ruby Gems
-export GEM_HOME="$(gem env user_gemhome)"
-export PATH="$PATH:$GEM_HOME/bin"
-
-# Go
-export GOPATH=$HOME/test/go
-export PATH=$PATH:$GOPATH/bin
